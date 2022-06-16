@@ -78,6 +78,11 @@ class Personal():
         ssn_number.send_keys('123456')
         time.sleep(1)
 
+        sin_number = driver.find_element(By.ID, 'personal_txtSINNo')
+        sin_number.clear()
+        sin_number.send_keys('78910')
+        time.sleep(1)
+
         gender = driver.find_element(By.ID, 'personal_optGender_1')
         status = gender.is_selected()
 
